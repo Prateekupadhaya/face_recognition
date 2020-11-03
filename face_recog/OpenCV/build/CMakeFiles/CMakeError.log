@@ -1,0 +1,36 @@
+Determining if the include file io.h exists failed with the following output:
+Change Dir: /root/Desktop/faceproject/f/OpenCV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0cc0a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0cc0a.dir/build.make CMakeFiles/cmTC_0cc0a.dir/build
+make[1]: Entering directory '/root/Desktop/faceproject/f/OpenCV/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0cc0a.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -msse3 -ffunction-sections  -O3 -DNDEBUG   -o CMakeFiles/cmTC_0cc0a.dir/CheckIncludeFile.c.o   -c /root/Desktop/faceproject/f/OpenCV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/root/Desktop/faceproject/f/OpenCV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: io.h: No such file or directory
+    1 | #include <io.h>
+      |          ^~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_0cc0a.dir/build.make:66: CMakeFiles/cmTC_0cc0a.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/root/Desktop/faceproject/f/OpenCV/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_0cc0a/fast] Error 2
+
+
+Determining if the function jbg_newlen exists failed with the following output:
+Change Dir: /root/Desktop/faceproject/f/OpenCV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4a82c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4a82c.dir/build.make CMakeFiles/cmTC_4a82c.dir/build
+make[1]: Entering directory '/root/Desktop/faceproject/f/OpenCV/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4a82c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -msse3 -ffunction-sections -DCHECK_FUNCTION_EXISTS=jbg_newlen -O3 -DNDEBUG   -o CMakeFiles/cmTC_4a82c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4a82c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a82c.dir/link.txt --verbose=1
+/usr/bin/cc    -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -msse3 -ffunction-sections -DCHECK_FUNCTION_EXISTS=jbg_newlen -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_4a82c.dir/CheckFunctionExists.c.o  -o cmTC_4a82c 
+/usr/bin/ld: CMakeFiles/cmTC_4a82c.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text.startup.main+0xc): undefined reference to `jbg_newlen'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_4a82c.dir/build.make:87: cmTC_4a82c] Error 1
+make[1]: Leaving directory '/root/Desktop/faceproject/f/OpenCV/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_4a82c/fast] Error 2
+
+
